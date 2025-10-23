@@ -80,7 +80,7 @@ int main() {
 
         bdptcam.aspect_ratio      = 1.0;
         bdptcam.image_width       = 600;
-        bdptcam.samples_per_pixel = 30;
+        bdptcam.samples_per_pixel = 25;
         bdptcam.max_depth         = 10;
         bdptcam.background        = color(0,0,0);
 

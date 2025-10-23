@@ -367,6 +367,10 @@ public:
     return tex->value(u, v, p);
   }
 
+  color Evaluate(const vec3& wi, const vec3& wo, const hit_record& rec) const override
+  {
+    return tex->value(rec.u,rec.v,rec.p);
+  }
 
   color Emission(const vec3& wi, const hit_record& rec) const override
   {

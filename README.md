@@ -1,8 +1,13 @@
 Bidirectional Path Tracer
 ====================================================================================================
 
-![BDPT Output][current]
+![BDPT Output 25 Samples][current25]
 
+25 Samples
+
+![BDPT Output 1000 Samples][current1000]
+
+1000 Samples
 
 Background
 ------------------
@@ -72,4 +77,5 @@ $ cmake -B build/Debug -DCMAKE_BUILD_TYPE=Debug
 $ cmake --build build/Debug
 ```
 
-[current]:          images/bdpt.png
+[current25]:          images/bdpt.png
+[current1000]:          images/bdpt1000.png

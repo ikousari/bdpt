@@ -245,7 +245,7 @@ class bdptcamera {
             
             path.vertices.push_back(vertex);
             
-            if (vertex.isDelta)
+            if (false)
             {
                 throughput = throughput * bsdfSample.val / bsdfSample.pdf;
             }
@@ -349,7 +349,7 @@ class bdptcamera {
             
             path.vertices.push_back(vertex);
             
-            if (vertex.isDelta)
+            if (false)
             {
                 throughput = throughput * bsdfSample.val / bsdfSample.pdf;
             }
@@ -457,10 +457,10 @@ class bdptcamera {
         }
         
         // Cannot connect through delta interactions (specular surfaces)
-        if (cameraVertex.isDelta || lightVertex.isDelta)
-        {
-            return color(0, 0, 0);
-        }
+        // if (cameraVertex.isDelta || lightVertex.isDelta)
+        // {
+        //     return color(0, 0, 0);
+        // }
         
         // Evaluate BSDFs at both vertices
         color cameraBSDF = cameraVertex.rec.mat->Evaluate(
