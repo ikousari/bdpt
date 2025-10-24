@@ -13,18 +13,14 @@ Background
 ------------------
 This BDPT implementation written by Isaac Kousari is built on top of the _Ray Tracing in One Weekend_ series of books.
 
-### v1.0 Implementation details
+### v1.1 Implementation details
   - Cosine Hemisphere sampling for lambertian reflections
   - Dieletrics with schlick approximation for refraction
   - Russian Roulette termination in camera and light path creation
   - Balanced Heuristic MIS
 
 ### TODOs
-
-  - Fix fireflies
-  - Fix dieletric reflections (_I think partially to do with reflection probabilty being assigned to 1_)
-    - Light is not being reflected on top of sphere (_I think is a corner case in the delta material handling at vertex connection_)
-  - Improve caustics
+  - Fix global illumination value due to MIS approximation
   - Make README.md nicer :)
   - Make easier to dump the individual unweighted s & t contributions
   - Finish looking into Microfacets and implement Disney Principled BSDF
